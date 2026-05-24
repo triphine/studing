@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>CSS Position Example</title>
+
+         <style>
+                  body {
+                           height: 2000px;
+                           /* for scrolling */
+                           font-family: Arial, sans-serif;
+                  }
+
+                  /* RELATIVE */
+                  .relative-box {
+                           position: relative;
+                           top: 20px;
+                           left: 20px;
+                           background-color: lightblue;
+                           padding: 20px;
+                           margin: 20px;
+
+                  }
+
+                  .relative-box img {
+                           width: 6vh;
+                           width: 6wd;
+                           position: absolute;
+                           top: 0px;
+                           left: 0x;
+                  }
+
+
+                  /* ABSOLUTE */
+                  .parent {
+                           position: relative;
+                           background-color: lightgray;
+                           height: 200px;
+                           margin: 20px;
+                  }
+
+                  .absolute-box {
+                           position: absolute;
+                           top: 10px;
+                           right: 10px;
+                           background-color: orange;
+                           padding: 10px;
+                  }
+
+                  /* FIXED */
+                  .fixed-box {
+                           position: fixed;
+                           bottom: 10px;
+                           right: 10px;
+                           background-color: red;
+                           color: white;
+                           padding: 10px;
+                  }
+
+                  /* STICKY */
+                  .sticky-box {
+                           position: sticky;
+                           top: 0;
+                           background-color: green;
+                           color: white;
+                           padding: 15px;
+                  }
+
+                  .content {
+                           height: 800px;
+                           padding: 20px;
+                  }
+         </style>
+</head>
+
+<body>
+
+
+         <div class="sticky-box">I am Sticky (I stick to the top when scrolling)</div>
+
+
+         <div class="relative-box">
+                  I am Relative (I move from my normal position)
+                  <img src="images/doctor.webp">
+         </div>
+
+
+         <div class="parent">
+                  Parent (Relative)
+                  <div class="absolute-box">
+                           I am Absolute (positioned inside parent)
+                  </div>
+         </div>
+
+
+         <div class="content">
+                  Scroll down to see the fixed and sticky effects.
+         </div>
+
+
+         <div class="fixed-box">
+                  I am Fixed (I stay in place)
+         </div>
+
+</body>
+
+</html>

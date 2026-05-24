@@ -1,0 +1,231 @@
+* {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: Arial, sans-serif;
+}
+
+body {
+         background: #f4f4f4;
+}
+
+/* NAVBAR */
+.navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         background: #7ea300;
+         padding: 15px 60px;
+         color: white;
+}
+
+.logo {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+}
+
+.logo img {
+         width: 40px;
+}
+
+.nav-links {
+         display: flex;
+         list-style: none;
+         gap: 25px;
+}
+
+.nav-links a {
+         color: white;
+         text-decoration: none;
+         font-size: 14px;
+}
+
+.container {
+         height: 500px;
+         background: url('images/doctor.webp') center/cover no-repeat;
+         position: relative;
+}
+
+.welcome {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.45);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         text-align: center;
+}
+
+.overlay h1 {
+         font-size: 48px;
+         margin-bottom: 15px;
+}
+
+.overlay p {
+         font-size: 18px;
+         margin-bottom: 20px;
+}
+
+.buttons {
+         display: flex;
+         gap: 15px;
+}
+
+.btn {
+         padding: 12px 25px;
+         border: none;
+         cursor: pointer;
+         color: white;
+         font-weight: bold;
+}
+
+.green {
+         background: #2e8b57;
+}
+
+.yellow {
+         background: #8ba600;
+}
+
+.services {
+         width: 85%;
+         margin: 80px auto;
+}
+
+.services h1 {
+         text-align: center;
+         font-size: 45px;
+         margin-bottom: 60px;
+}
+
+.service-row {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 70px;
+         gap: 40px;
+}
+
+.service-row img {
+         width: 45%;
+         height: 250px;
+         object-fit: cover;
+}
+
+.text {
+         width: 45%;
+}
+
+.text h2 {
+         font-size: 42px;
+         line-height: 1.2;
+}
+
+.text span {
+         color: #8ba600;
+}
+
+.text p {
+         margin-top: 15px;
+         color: #555;
+         line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+         background: #1e1e1e;
+         color: white;
+         padding-top: 60px;
+}
+
+.footer-content {
+         display: flex;
+         justify-content: space-around;
+         padding: 0 60px 40px;
+}
+
+.footer-content h3 {
+         margin-bottom: 15px;
+}
+
+.footer-content p {
+         margin-bottom: 8px;
+         color: #ccc;
+}
+
+.copyright {
+         text-align: center;
+         padding: 20px;
+         background: #333;
+         color: #ddd;
+}
+
+@media (max-width:992px) {
+         .navbar {
+                  padding: 15px 20px;
+         }
+
+         .logo h2 {
+                  font-size: 30px;
+         }
+
+         .nav-links {
+                  gap: 20px;
+         }
+
+         .nav-links a {
+                  font-size: 18px;
+         }
+}
+
+@media (max-width: 768px) {
+         .navbar {
+                  flex-direction: column;
+                  align-items: flex-start;
+         }
+
+         .logo {
+                  margin-bottom: 15px;
+         }
+
+         .logo h2 {
+                  font-size: 26px;
+         }
+
+         .nav-links {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 15px;
+         }
+
+         .nav-links a {
+                  font-size: 18px;
+                  padding: 8px 0;
+         }
+}
+
+@media (max-width: 480px) {
+         .navbar {
+                  padding: 10px 15px;
+         }
+
+         .logo img {
+                  width: 40px;
+                  height: 40px;
+         }
+
+         .logo h2 {
+                  font-size: 22px;
+         }
+
+         .nav-links a {
+                  font-size: 16px;
+         }
+}
